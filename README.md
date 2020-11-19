@@ -1,2 +1,3 @@
 # tour-plan-adaptive
-Salakhov Razil
+ Salakhov
+ 
