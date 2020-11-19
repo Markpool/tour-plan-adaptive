@@ -1,2 +1,2 @@
 # tour-plan-adaptive
-Salakhov Razil19
+Salakhov Razil
