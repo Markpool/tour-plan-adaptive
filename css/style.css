@@ -5,6 +5,7 @@
 
 body {
   font-family: "Muli", sans-serif;
+  background-color: #f5fafe;
   color: #333333;
 }
 
@@ -562,5 +563,22 @@ template {
   .navbar__user, .navbar__search {
     display: none;
   }
+}
+
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
 }
 /*# sourceMappingURL=style.css.map */
