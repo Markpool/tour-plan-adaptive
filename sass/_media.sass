@@ -21,13 +21,24 @@
     .search
         &__input
             width: 340px
+
 @media (max-width: 768px)
     .container
         max-width: 576px
         width: 92%
     .navbar
-        &__search, &__menu, &__user
-        &-menu
+        &__user
+            margin-left: 73px
+        &__search 
+            margin: auto 
+@media  (max-width: 760px)
+    .container
+        max-width: 576px
+        width: 92%
+    .navbar
+        &-menu, &__menu
+            display: none
+        &__user, &__search
             display: none
     .menu
         &-button
@@ -39,12 +50,27 @@
             justify-content: space-between
             flex-direction: column
             border: none
-            background-color: #fff
             cursor: pointer
             &__line
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .hotel
+        &-name
+            flex-basis: auto
+        &-wrapper
+            justify-content: space-between
+        &-info
+            &__text
+                width: 100%
+            &__name
+                margin-top: 10px
+                margin-bottom: 0px
+            &__rating
+                display: none
+            &__offer
+                order: -1
+                margin-left: 0
 @media  (max-width: 576px)
     .logo
         width: 99px
