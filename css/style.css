@@ -577,7 +577,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
 }
 
 .stars {
@@ -847,7 +846,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .hotel_slider {
+  .hotel__slider {
     margin-bottom: 30px;
   }
   .hotel-right {
