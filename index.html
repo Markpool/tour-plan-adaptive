@@ -103,36 +103,33 @@
                 </div>
             </div>
             <div class="hotel-grid">
-                <div class="slider hotel__slider">
                                <!-- Slider main container -->
-                                <div class="swiper-container">
+                                <div class="swiper-container hotel-slider hotel__slider">
                                     <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper">
                                         <!-- Slides -->
-                                        <div class="swiper-slide">
+                                        <div class="swiper-slide hotel-slider__item">
                                             <img class="swiper-slide__image" src="img/rectangle.jpg" alt="slide">
                                         </div>
-                                        <div class="swiper-slide">
+                                        <div class="swiper-slide hotel-slider__item">
                                             <img class="swiper-slide__image" src="img/snow.jpg" alt="snow">
                                         </div>
-                                        <div class="swiper-slide">
+                                        <div class="swiper-slide hotel-slider__item">
                                             <img class="swiper-slide__image" src="img/build.jpg" alt="biu">
                                         </div>
-                                        <div class="swiper-slide">
+                                        <div class="swiper-slide hotel-slider__item">
                                             <img class="swiper-slide__image" src="img/grand-otel-polyana.jpg" alt="polyana">
                                         </div>
-                                        <div class="swiper-slide">
+                                        <div class="swiper-slide hotel-slider__item">
                                             <img class="swiper-slide__image" src="img/pool.jpg" alt="swing">
                                         </div>
 
                                     </div>
 
                                     <!-- If we need navigation buttons -->
-                                    <button class="slider-button slider-button--prev"></button>
-                                    <button class="slider-button slider-button--next"></button>
+                                    <button class="hotel-slider__button hotel-slider__button--prev"></button>
+                                    <button class="hotel-slider__button hotel-slider__button--next"></button>
                                 </div> 
-                                <!--Закрытие-->
-                </div>
                 <div class="hotel-right">
                 <div class="booking">
                     <div class="booking__info">
@@ -187,6 +184,70 @@
                 <input type="text" class="subscribe__input" placeholder="Your email address">
                 <button class="subscribe__button">Send</button>
             </form>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">What people think about us</h2>
+            <div class="swiper-container reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Megan Fox</h3>
+                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="./img/star.svg" alt="Star">
+                                    <img src="./img/star.svg" alt="Star">
+                                    <img src="./img/star.svg" alt="Star">
+                                    <img src="./img/star.svg" alt="Star">
+                                    <img src="./img/star.svg" alt="Star"> 
+                                </div>
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. 
+                                They welcome us very well. Issue was only that Lift was not in working and
+                                we were allotted to 3rd floor and amenities articles were in corner of
+                                gallery which were giving bad feeling. Breakfast was good and support of
+                                the staff was also very nice. Location is not good as per atmosphere, 
+                                it is very nearby most of the popular places but self location in a narrow
+                                street is not good. Overall it was a good experience and could recommend. 
+                            </p>
+                        </div>
+                        <!--/.reviews-slider__item-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="img/reviews-avatar-1.jpg" alt="Photo: Kate Rodges" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Kate Rodges</h3>
+                                <span class="reviews-slider__date">Stayed 19 Aug, 2020</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="./img/star.svg" alt="Star">
+                                    <img src="./img/star.svg" alt="Star">
+                                    <img src="./img/star.svg" alt="Star">
+                                    <img src="./img/star.svg" alt="Star">
+                                </div>
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                I really wanted to have access to the lounge, but in the end we were offered
+                                Breakfast (they are very good) and dinner (it's tin! For two days in a row, 
+                                the hot meal was served with the same sweet and sour sauce, one soft drink 
+                                and another salad, but this clearly did not meet expectations. 
+                            </p>
+                        </div>
+                        <!--/.reviews-slider__item-->
+                    </div>
+                    <!--/.swiper-wrapper-->
+                 </div>
+                 <!-- /. swiper-wrapper-->
+                <button class="reviews-slider__button reviews-slider__button--prev"></button>
+                <button class="reviews-slider__button reviews-slider__button--next"></button>
+            </div>
+            <!--/.reviews-slider -->
         </div>
     </section>
     <script src="js/swiper-bundle.min.js"></script>
