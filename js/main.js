@@ -19,3 +19,11 @@ var hotelSlider = new Swiper(".hotel-slider", {
       prevEl: ".reviews-slider__button--prev", 
     },
   });
+
+  var menButton = document.querySelector(".menu-button");
+  menButton.addEventListener('click', function () {
+    console.log("Клик по кнопке меню");
+    document
+    .querySelector(".navbar-bottom")
+    .classList.toggle('navbar-bottom--visible');
+  });

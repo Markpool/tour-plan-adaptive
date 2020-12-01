@@ -10,21 +10,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile_fixed">
         <div class="container">
             <div class="navbar-top">
                 <a href="#" class="logo">
                     <img src="img/horizontal-logo.svg" alt="Logo" class="logo__image">
                 </a>
 
-                <form action="#" class="search navbar__search">
+                <form action="#" class="search navbar__search navbar__search--mobile_hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img/vector.svg" alt="Icon:search">
                     </button>
                 </form>
 
-                <a href="#" class="user navbar__user">
+                <a href="#" class="user navbar__user navbar__user--mobile_hidden">
                     <img src="img/user_avatar.jpg" alt="Avatar:Nathan" class="user__avatar">
                     <span class="user__name"> Nathan</span>
                 </a>
@@ -33,12 +33,25 @@
                     <span class="menu-button__line"></span>
                     <span class="menu-button__line"></span>
                 </button>
-            </div>
-                
+            </div>       
         </div>  
         <div class="navbar-bottom">
             <div class="container">
                 <ul class="navbar-menu">
+                    <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                        <a href="#" class="user navbar__user navbar__user--mobile_visible">
+                            <img src="img/user_avatar.jpg" alt="Avatar:Nathan" class="user__avatar--pink">
+                            <span class="user__name user__name--light"> Nathan</span>
+                        </a>
+                    </li>
+                    <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                        <form action="#" class="search navbar__search navbar__search--mobile_visible">
+                            <input type="text" class="search__input" placeholder="Search Location">
+                            <button class="search__button">
+                                <img src="img/vector.svg" alt="Icon:search">
+                            </button>
+                        </form>
+                    </li>
                     <li class="navbar-menu__item">
                         <a href="#" class="navbar-menu__link">All Deals</a>
                     </li>
@@ -46,19 +59,19 @@
                         <a href="#" class="navbar-menu__link">Hotels</a>
                     </li>
                     <li class="navbar-menu__item">
-                         <a href="#" class="navbar-menu__link">Activites</a>
+                         <a href="#" class="navbar-menu__link">Activities</a>
                     </li>
                     <li class="navbar-menu__item">
                         <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Restouran</a>
+                        <a href="#" class="navbar-menu__link">Restaurants</a>
                     </li>
                     <li class="navbar-menu__item">
                         <a href="#" class="navbar-menu__link">Events</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Rodriges</a>
+                        <a href="#" class="navbar-menu__link">Rodrigues</a>
                     </li>
                 </ul>
             </div>
@@ -271,16 +284,12 @@
                 <div class="card activities__card">
                     <img src="img/activities-3.jpg" alt="Tamarind falls hiking
                     trip - full day" class="card__image">
-                    <h3 class="card__title">Tamarind falls hiking
-                        trip - full day
-                        </h3>
+                    <h3 class="card__title">Tamarind falls hikingtrip - full day</h3>
                     <button class="card__button">Book Now</button>
                 </div>
                 <div class="card activities__card">
-                    <img src="img/activities-4.jpg" alt="The blue marine discovery
-                    quest" class="card__image">
-                    <h3 class="card__title">The blue marine discovery
-                        quest</h3>
+                    <img src="img/activities-4.jpg" alt="The blue marine discoveryquest" class="card__image">
+                    <h3 class="card__title">The blue marine discoveryquest</h3>
                     <button class="card__button">Book Now</button>
                 </div>
             </div>
@@ -344,7 +353,7 @@
             </div>
             <div class="footer__social-network">
                 <h3 class="footer__title footer__title-inline">Social Network</h3>
-                <div class="footer__social_links">
+                <div class="footer__social-links">
                     <a href="#" class="footer__link">
                         <img src="img/facebooke.svg" alt="Icon: facebook">
                     </a>
@@ -405,9 +414,17 @@
                         <input type="text" class="input footer__input" placeholder="Your Full Name*">
                         <input type="text" class="input footer__input" placeholder="Phone Number*">
                         <textarea class="footer__message"  cols="30" rows="10" placeholder="Message"></textarea>
+                        <div class="footer__perm">
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
+                        </div>
                     </form>
+                </div>
+                <div class="footer__disclamer-pay">
+                    <p class="footer__disclamer-text">Disclaimer Conditions of use Cancellation policy</p>
+                    <div class="footer__disclamer-pay">
+                        <img class="footer__disclamer-pay--qm-1" src="img/pay.svg" alt="Icon:Pay">
+                    </div>
                 </div>
             </div>
         </div>

@@ -15,6 +15,7 @@
     .footer
         &__input
             flex-basis: 100%  
+
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -115,11 +116,42 @@
     .container
         max-width: 576px
         width: 92%
+    body
+        padding-top: 78px
     .navbar
-        &-menu, &__menu
-            display: none
+        &--mobile
+            &_fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
         &__user, &__search
+            &--mobile
+                &_hidden
+                    display: none
+                &_visible
+                    display: flex
+        &__user
+            flex-direction: column
+            justify-content: center
+        &-bottom
             display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 78px
+            padding-top: 30px
+            &--visible
+                display: block
+        &-menu
+            flex-direction: column
+            &__item
+                margin-bottom: 20px
+                &--mobile
+                    &_visible
+                        display: block
     .menu
         &-button
             display: flex
@@ -135,6 +167,13 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .user
+        &__name
+            margin-left: 0
+            &--light
+                color: $light
+                margin-left: 0
+                margin-top: 20px
     .stars
         display: flex
         justify-content: flex-end
@@ -240,7 +279,7 @@
     .reviews
         &__title
             width: 245px
-            font-style: normal;
+            font-style: normal
             font-weight: bold
             font-size: 18px
             line-height: 23px
@@ -262,12 +301,32 @@
     .footer
         &-wrapper
             width: 300px
+        &__social
+            &-links
+                display: flex   
+            &-network
+                flex-direction: column      
         &__logo
             height: 120px
             width: 104px
         &__message
             width: 280px
-
+            height: 123px
+        &__perm
+            display: flex
+            flex-direction: column 
+        &__button
+            order: 1  
+        &__info
+            top: 12px
+            margin-bottom: 15px
+        &__disclamer 
+            &-text
+                height: 15px
+                white-space: normal  
+            &-pay
+                &--qm-1
+                    height: 100px
 
 
             

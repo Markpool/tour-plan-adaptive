@@ -27,9 +27,13 @@
             text-transform: uppercase
             font-size: 14px
             line-height: 18px
+        &__item
+            &--mobile
+                &_visible
+                    display: none
+                    
 .logo
-    width: 177px
-            
+    width: 177px      
 .search
     display: flex
     position: relative
@@ -63,9 +67,17 @@
         height: 40px
         border-radius: 50%
         object-fit: cover
+        &--pink
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            object-fit: cover
+            margin-right: 70px
     &__name
         margin-left: 18px
         font-size: 14px
         line-height: 18px
         color: $text-color
+        &--light
+            margin-right: 70px  
         
