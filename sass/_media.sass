@@ -15,7 +15,6 @@
     .footer
         &__input
             flex-basis: 100%  
-
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -303,31 +302,43 @@
             width: 300px
         &__social
             &-links
-                display: flex   
+                margin-left: 0
             &-network
-                flex-direction: column      
+                flex-direction: column 
+                justify-content: space-between
+                grid-row: 2 
         &__logo
             height: 120px
-            width: 104px
+            display: grid
+            grid-row: 1 
+        &__legal
+            display: grid
+            grid-row: 3
+        &__additional
+            display: grid
+            grid-row: 4
+            margin-top: 30px
+        &__categories
+            display: grid
+            grid-row: 5
+            margin-top: 30px
         &__message
             width: 280px
             height: 123px
         &__perm
             display: flex
             flex-direction: column 
+            &-info
+                top: 12px
+                margin-bottom: 15px
+                font-style: normal
+                font-weight: bold
+                font-size: 12px
+                line-height: 15px
+                margin-left: 0
         &__button
             order: 1  
-        &__info
-            top: 12px
-            margin-bottom: 15px
-        &__disclamer 
-            &-text
-                height: 15px
-                white-space: normal  
-            &-pay
-                &--qm-1
-                    height: 100px
-
+            
 
             
 

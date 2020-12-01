@@ -21,12 +21,12 @@
             align-items: center
             min-width: 83px
             justify-content: space-between
+            margin-left: 43px
         &-network
             display: flex
             align-items: start
             grid-row: 2 / 4
-            grid-column: span 2
-            
+            grid-column: span 2          
     &__contact
         &-details
             grid-column: span 2 
@@ -65,12 +65,19 @@
     &__icon
         &-wrapper
             min-width: 40px
+    &__information
+        &-contacts
+            color: $color-footer-text
+    &__inform
+        list-style: none
+        text-decoration: none
+        color: $color-footer-text
     &__text
-        color: $footer-text-color
+        color: $color-footer-text
         margin-bottom: 22px
     &__link
         text-decoration: none
-        color: inherit
+        color: $color-footer-text
     &__input
         background-color: #ffffff
         border-radius: 4px
@@ -79,6 +86,10 @@
         height: 50px
         margin-bottom: 15px
         flex-basis: 48%
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
     &__message
         background-color: #ffffff
         border-radius: 4px
@@ -86,6 +97,13 @@
         border: none
         flex-basis: 100%
         margin-bottom: 23px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        resize: none
+        width: 539px
+        height: 123px
     &__button
         min-width: 160px
         min-height: 50px
@@ -98,12 +116,25 @@
         background-color: $primary
         border: none
         border-radius: 4px
-    &__info
-        font-style: normal
-        font-weight: bold
-        font-size: 12px
-        line-height: 15px
-        color: $footer-text-color
+    &__perm
+        &-info
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: $footer-text-color
+            margin-left: 280px
+    &__bottom
+        &-link
+            white-space: nowrap
+            text-decoration: none
+            color: $light
+        &-item
+            list-style: none
+            margin: 0 auto
+        &_img
+            position: absolute
+            margin-right: 10px
 
                 
 
