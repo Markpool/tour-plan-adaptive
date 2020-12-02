@@ -1878,11 +1878,6 @@ template {
     line-height: 15px;
     margin-left: -55px;
   }
-  .footer__button {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
   .footer__bottom {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
