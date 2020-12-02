@@ -5,10 +5,12 @@
     padding-bottom: 46px
     &-wrapper
         display: grid
-        grid-template-columns: repeat(4, minmax(250px, 1fr))
-        grid-gap: 20px
         grid-auto-rows: minmax(40px, min-content)
-        align-items: start     
+        grid-template-columns: repeat(4, minmax(200px, 1fr))
+        grid-gap: 20px
+        align-items: start
+    &__wrapper
+        margin-bottom: 95px
     &__logo
         width: 166px
         grid-row: 1 / 3
@@ -21,17 +23,17 @@
             align-items: center
             min-width: 83px
             justify-content: space-between
+            margin-left: 43px
         &-network
             display: flex
             align-items: start
             grid-row: 2 / 4
             grid-column: span 2
-            
     &__contact
         &-details
-            grid-column: span 2 
+            grid-column: span 2
         &-form
-            grid-column: span 2 
+            grid-column: span 2
     &__form
         display: flex
         align-items: center
@@ -65,12 +67,19 @@
     &__icon
         &-wrapper
             min-width: 40px
+    &__information
+        &-contacts
+            color: $color-footer-text
+    &__inform
+        list-style: none
+        text-decoration: none
+        color: $color-footer-text
     &__text
-        color: $footer-text-color
+        color: $color-footer-text
         margin-bottom: 22px
     &__link
         text-decoration: none
-        color: inherit
+        color: $color-footer-text
     &__input
         background-color: #ffffff
         border-radius: 4px
@@ -78,7 +87,9 @@
         padding: 0 23px
         height: 50px
         margin-bottom: 15px
-        flex-basis: 48%
+        flex-basis: 48.65%
+        font-size: 12px
+        line-height: 15px
     &__message
         background-color: #ffffff
         border-radius: 4px
@@ -86,6 +97,12 @@
         border: none
         flex-basis: 100%
         margin-bottom: 23px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        resize: none
+        height: 123px
     &__button
         min-width: 160px
         min-height: 50px
@@ -98,15 +115,45 @@
         background-color: $primary
         border: none
         border-radius: 4px
-    &__info
-        font-style: normal
-        font-weight: bold
-        font-size: 12px
-        line-height: 15px
-        color: $footer-text-color
-
-                
-
-
+    &__perm
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-info
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: $footer-text-color
+            margin-left: 280px
+    &__bottom
+        // width: 60%
+        align-self: center
+        // grid-column: span 4
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-list
+            display: flex
+            padding: 0
+            align-items: center
+            list-style: none
+            white-space: nowrap
+            margin: 0 auto
+        &-item
+            // display: inline-block
+            // margin: 0 auto
             
-
+            margin-right: 12px
+            &:last-child
+                margin-right: 0
+        &-link
+            text-decoration: none
+            color: $light
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+        &_img
+            max-width: 136px
+            // height: 22px

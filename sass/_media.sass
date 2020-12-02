@@ -1,5 +1,5 @@
 @media (max-width: 1200px)
-    .container 
+    .container
         max-width: 960px
     .slider
         width: 590px
@@ -14,8 +14,11 @@
         height: 230px
     .footer
         &__input
-            flex-basis: 100%  
-
+            flex-basis: 100%
+        &__perm
+            &-info
+                white-space: nowrap
+                margin-left: 210px        
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -26,7 +29,7 @@
             padding-top: 30px
             padding-bottom: 30px
         &__search
-        margin-left: auto
+            margin-left: auto
         &-menu
             padding-top: 22px
             padding-bottom: 22px
@@ -68,20 +71,20 @@
         &__input
             flex-basis: 49%
         &__logo
-            grid-row: 1 / 2 
-            grid-column: span 2 
+            grid-row: 1 / 2
+            grid-column: span 2
         &__social
             &-network
-                grid-row: 1 /2 
-                grid-column: span 4 
+                grid-row: 1 /2
+                grid-column: span 4
                 align-self: center
         &__categories
             grid-row: 2 / 3
             grid-column: span 2
         &__legal
-            grid-column: span 2 
+            grid-column: span 2
         &__additional
-            grid-column: span 2 
+            grid-column: span 2
         &__contact
             &-details
                 grid-column: span 5
@@ -89,6 +92,10 @@
             &-form
                 grid-column: span 5
                 grid-row: 4
+        &__perm
+            &-info
+                white-space: nowrap
+                margin-left: 320px
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -96,8 +103,8 @@
     .navbar
         &__user
             margin-left: 73px
-        &__search 
-            margin: auto 
+        &__search
+            margin: auto
     .reviews
         &__title
             white-space: nowrap
@@ -105,13 +112,29 @@
         &-right
             display: flex
             justify-content: space-between
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px
+    .card
+        width: 49%
+        height: 255px
     .booking
-        margin-right: 10px   
+        margin-right: 10px
     .map
-        margin-left: 10px 
+        margin-left: 10px
     .footer
+        &__contact
+            &-details
+                width: 539px
+            &-form
+                width: 539px
         &__input
             flex-basis: 100%
+        &__perm
+            &-info
+                white-space: nowrap
+                margin-left: 270px
+
 @media  (max-width: 760px)
     .container
         max-width: 576px
@@ -193,7 +216,7 @@
                 display: none
             &__offer
                 order: -1
-                margin-left: 0   
+                margin-left: 0
     .hotel
         &-right
             flex-direction: column
@@ -203,8 +226,8 @@
     .booking
         width: 100%
     .map
-        width: 100%  
-        margin: auto     
+        width: 100%
+        margin: auto
     .newsletter
         &-wrapper
             max-width: 576px
@@ -220,7 +243,7 @@
                 &:after, &:before
                     display: none
             &__button
-                top: 45px 
+                top: 45px
                 &--prev
                     left: 50%
                     margin-left: -65px
@@ -235,6 +258,12 @@
     .card
         width: 49%
         height: 255px
+    .footer
+        &__contact
+            &-details
+                width: 539px
+            &-form
+                width: 539px
 @media  (max-width: 576px)
     .logo
         width: 99px
@@ -257,25 +286,90 @@
             grid-column: 1
         &__social
             &-network
-                grid-row: 2 
+                grid-row: 2
                 grid-column: 1
+                width: 70%
         &__additional
             grid-row: 3
             grid-column: 1
+            width: 60%
         &__categories
             grid-row: 4
             grid-column: 1
+            width: 60%
         &__legal
             grid-row: 5
             grid-column: 1
+            width: 60%
         &__contact
             &-details
                 grid-row: 6
                 grid-column: 1
+                width: 60%
             &-form
                 grid-row: 7
                 grid-column: 1
+                width: 100%
+        &__perm
+            display: flex
+            flex-direction: column
+            &-info
+                top: 12px
+                margin-bottom: 15px
+                font-style: normal
+                font-weight: bold
+                font-size: 12px
+                line-height: 15px
+                margin-left: -55px
+        &__button
+            order: 
+        &__bottom
+            flex-wrap: wrap
+            &-list
+                padding: 0
+                // width: 60%
+                margin: 0
+                margin-bottom: 10px
+            &-link
+                text-decoration: none
+                color: $light
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                width: 60%
+            &-item
+                // display: inline
+                list-style: none
+                margin: 0 auto
+                width: 60%
+            &_img
+                margin-right: 10px
+                width: 136px
+                height: 22px
+                width: 60%
+
 @media  (max-width: 400px)
+    .navbar
+        &--mobile
+            &_fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+        &__user
+            &--mobile
+                &_hidden
+                    display: none
+                &_visible
+                    display: flex
+        &__search
+            position: absolute
+            width: 243px
+            height: 40px
+            left: 38px
+            top: 150px
     .reviews
         &__title
             width: 245px
@@ -289,6 +383,7 @@
             margin-bottom: 42px
     .card
         width: 100%
+
 @media (max-width:320px)
     .container
         max-width: 95%
@@ -296,44 +391,88 @@
         width: 99px
         height: 13px
     .navbar
-        &__user, &__search
-            display: none
+        &--mobile
+            &_fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+        &__user,
+            &--mobile
+                &_hidden
+                    display: none
+                    &_visible
+                        display: flex
+        &__search
+            position: absolute
+            width: 243px
+            height: 40px
+            left: 38px
+            top: 150px
     .footer
         &-wrapper
-            width: 300px
+            // width: 300px
         &__social
             &-links
-                display: flex   
+                margin-left: 0
             &-network
-                flex-direction: column      
+                flex-direction: column
+                justify-content: space-between
+                grid-row: 2
         &__logo
             height: 120px
-            width: 104px
+            display: grid
+            grid-row: 1
+        &__legal
+            display: grid
+            grid-row: 3
+        &__additional
+            display: grid
+            grid-row: 4
+            margin-top: 30px
+        &__categories
+            display: grid
+            grid-row: 5
+            margin-top: 30px
         &__message
             width: 280px
             height: 123px
         &__perm
             display: flex
-            flex-direction: column 
+            flex-direction: column
+            &-info
+                top: 12px
+                margin-bottom: 15px
+                font-style: normal
+                font-weight: bold
+                font-size: 12px
+                line-height: 15px
+                margin-left: -55px
         &__button
-            order: 1  
-        &__info
-            top: 12px
-            margin-bottom: 15px
-        &__disclamer 
-            &-text
-                height: 15px
-                white-space: normal  
-            &-pay
-                &--qm-1
-                    height: 100px
-
-
-            
-
-        
-            
-        
-    
-
-
+            order: 1
+        &__bottom
+            flex-wrap: wrap
+            &-list
+                padding: 0
+                // width: 60%
+                margin: 0
+                margin-bottom: 10px
+            &-link
+                text-decoration: none
+                color: $light
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                width: 60%
+            &-item
+                // display: inline
+                list-style: none
+                margin: 0 auto
+                width: 60%
+            &_img
+                margin-right: 10px
+                width: 136px
+                height: 22px
+                width: 60%
