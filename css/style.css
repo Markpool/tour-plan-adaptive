@@ -18,6 +18,38 @@ img {
   margin: auto;
 }
 
+.input {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+}
+
+.message {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+  width: 302px;
+  height: 123px;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #ec1f46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1151,11 +1183,6 @@ template {
 }
 
 .footer__input {
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: none;
-  padding: 0 23px;
-  height: 50px;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48.65%;
       flex-basis: 48.65%;
@@ -1164,10 +1191,6 @@ template {
 }
 
 .footer__message {
-  background-color: #ffffff;
-  border-radius: 4px;
-  padding: 18px 23px;
-  border: none;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
@@ -1177,20 +1200,6 @@ template {
   line-height: 15px;
   resize: none;
   height: 123px;
-}
-
-.footer__button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #fff;
-  background-color: #ec1f46;
-  border: none;
-  border-radius: 4px;
 }
 
 .footer__perm {
@@ -1260,6 +1269,98 @@ template {
 
 .footer__bottom_img {
   max-width: 136px;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 233, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0A223D;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+.modal__perm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__perm-info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #e0e0e0;
 }
 
 .reviews {
@@ -1543,6 +1644,9 @@ template {
     white-space: nowrap;
     margin-left: 320px;
   }
+  .modal__dialog {
+    width: 478px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1593,7 +1697,15 @@ template {
   }
   .footer__perm-info {
     white-space: nowrap;
-    margin-left: 270px;
+  }
+  .modal__form {
+    width: 300px;
+  }
+  .modal__perm {
+    display: block;
+  }
+  .modal__perm-info {
+    margin-left: 40px;
   }
 }
 
@@ -1851,7 +1963,7 @@ template {
     grid-row: 6;
     -ms-grid-column: 1;
     grid-column: 1;
-    width: 60%;
+    width: 100%;
   }
   .footer__contact-form {
     -ms-grid-row: 7;
@@ -1877,6 +1989,11 @@ template {
     font-size: 12px;
     line-height: 15px;
     margin-left: -55px;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .footer__bottom {
     -ms-flex-wrap: wrap;
@@ -1906,6 +2023,34 @@ template {
     width: 136px;
     height: 22px;
     width: 60%;
+  }
+  .modal__dialog {
+    padding: 33px 66px;
+    width: 385px;
+  }
+  .modal__form {
+    width: 250px;
+  }
+  .modal__perm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 140px;
+  }
+  .modal__perm-info {
+    margin-left: 0;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: auto;
   }
 }
 
@@ -1945,6 +2090,35 @@ template {
   }
   .card {
     width: 100%;
+  }
+  .footer__contact-details {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    width: 100%;
+  }
+  .modal__dialog {
+    width: 310px;
+    padding: 20px 60px;
+  }
+  .modal__form {
+    width: 200px;
+  }
+  .modal__perm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 100px;
+  }
+  .modal__perm-info {
+    margin-left: 0;
+    margin-bottom: 15px;
+    margin-right: auto;
   }
 }
 
@@ -2019,6 +2193,13 @@ template {
     grid-row: 5;
     margin-top: 30px;
   }
+  .footer__contact-details {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    width: 100%;
+  }
   .footer__message {
     width: 280px;
     height: 123px;
@@ -2064,10 +2245,11 @@ template {
     line-height: 15px;
     width: 60%;
   }
-  .footer__bottom-item {
+  .footer__bottom-item:nth-last-child(3n+2) {
     list-style: none;
     margin: 0 auto;
     width: 60%;
+    margin-left: 10px;
   }
   .footer__bottom_img {
     margin-right: 10px;

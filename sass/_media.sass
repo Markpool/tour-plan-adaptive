@@ -96,6 +96,9 @@
             &-info
                 white-space: nowrap
                 margin-left: 320px
+    .modal
+        &__dialog
+            width: 478px
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -133,7 +136,14 @@
         &__perm
             &-info
                 white-space: nowrap
-                margin-left: 270px
+                margin-left: 
+    .modal
+        &__form
+            width: 300px 
+        &__perm
+            display: block  
+            &-info
+                margin-left: 40px
 
 @media  (max-width: 760px)
     .container
@@ -305,7 +315,7 @@
             &-details
                 grid-row: 6
                 grid-column: 1
-                width: 60%
+                width: 100%
             &-form
                 grid-row: 7
                 grid-column: 1
@@ -322,7 +332,7 @@
                 line-height: 15px
                 margin-left: -55px
         &__button
-            order: 
+            order: 1
         &__bottom
             flex-wrap: wrap
             &-list
@@ -348,7 +358,23 @@
                 width: 136px
                 height: 22px
                 width: 60%
-
+    .modal  
+        &__dialog
+            padding: 33px 66px
+            width: 385px
+        &__form
+            width: 250px 
+        &__perm
+            display: flex
+            flex-direction: column
+            margin-right: 140px
+            &-info
+                margin-left: 0
+                margin-bottom: 15px
+                margin-right: 10px
+        &__button 
+            order: 1
+            margin-left: auto
 @media  (max-width: 400px)
     .navbar
         &--mobile
@@ -383,7 +409,26 @@
             margin-bottom: 42px
     .card
         width: 100%
-
+    .footer
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+                width: 100%
+    .modal
+        &__dialog
+            width: 310px
+            padding: 20px 60px
+        &__form
+            width: 200px 
+        &__perm
+            display: flex
+            flex-direction: column
+            margin-right: 100px
+            &-info
+                margin-left: 0
+                margin-bottom: 15px
+                margin-right: auto
 @media (max-width:320px)
     .container
         max-width: 95%
@@ -435,6 +480,11 @@
             display: grid
             grid-row: 5
             margin-top: 30px
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+                width: 100%
         &__message
             width: 280px
             height: 123px
@@ -466,11 +516,12 @@
                 font-size: 12px
                 line-height: 15px
                 width: 60%
-            &-item
+            &-item:nth-last-child(3n+2)
                 // display: inline
                 list-style: none
                 margin: 0 auto
                 width: 60%
+                margin-left: 10px 
             &_img
                 margin-right: 10px
                 width: 136px
