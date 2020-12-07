@@ -12,7 +12,7 @@
     &__wrapper
         margin-bottom: 95px
     &__logo
-        width: 166px
+        width: 150px
         grid-row: 1 / 3
         align-self: stretch
     &__categories
@@ -43,6 +43,8 @@
         padding: 0
         margin: 0
         list-style: none
+        &-pack
+            padding-left: 10px
     &__title
         font-style: normal
         font-weight: bold
@@ -65,11 +67,14 @@
         &--mb-2
             margin-bottom: 20px
     &__icon
+        margin-top: 3px
         &-wrapper
             min-width: 40px
     &__information
         &-contacts
             color: $color-footer-text
+    &__legal
+        margin-left: 64px
     &__inform
         list-style: none
         text-decoration: none
@@ -77,14 +82,21 @@
     &__text
         color: $color-footer-text
         margin-bottom: 22px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160%
     &__link
         text-decoration: none
         color: $color-footer-text
     &__input
-        margin-bottom: 15px
-        flex-basis: 48.65%
-        font-size: 12px
-        line-height: 15px
+        width: 100%
+        &-group
+            margin-bottom: 15px
+            flex-basis: 46.65%
+            font-size: 12px
+            line-height: 15px
+        
     &__message
         flex-basis: 100%
         margin-bottom: 23px
@@ -106,12 +118,11 @@
             color: $footer-text-color
             margin-left: 280px
     &__bottom
-        // width: 60%
         align-self: center
-        // grid-column: span 4
         display: flex
         align-items: center
         justify-content: space-between
+        margin-left: 140px
         &-list
             display: flex
             padding: 0
