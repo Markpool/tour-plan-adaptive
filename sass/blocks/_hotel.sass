@@ -13,7 +13,10 @@
             margin-top: 4px
             margin-bottom: 0
         &__description
-            margin: 5px  0
+            margin-top: 0
+            margin-right: 0
+            margin-bottom: 5px
+            margin-left: 0
     &-name
         font-size: 24px
         line-height: 30px
@@ -73,6 +76,8 @@
                 background-image: url(../img/arrow-prev.svg)
 .stars
     flex-basis: 100%
+    &__star
+        margin-left: -2px
 .offer
     font-size: 10px
     line-height: 13px
@@ -95,33 +100,40 @@
     color: $light
     border-radius: 8px
     width: 350px
-    min-height: 210px
+    height: 210px
     padding: 28px
     &__info
+        font-family: Nunito
         display: flex
         align-items: center
         justify-content: space-between
         margin-bottom: 9px
     &__price
+        font-family: Nunito
         display: flex
         flex-direction: column
     &__start
+        font-family: Nunito
         font-weight: normal
         font-size: 10px
         line-height: 14px
     &__pricetag
+        font-family: Nunito
         font-style: normal
         font-weight: 800
         font-size: 24px
         line-height: 33px
     &__per-room
+        font-family: Nunito
         font-style: normal
         font-weight: normal
         font-size: 12px
         line-height: 16px
     &__room
+        font-family: Nunito
         margin-top: 4px
     &__text
+        font-family: Nunito
         display: flex
         align-items: center
         justify-content: space-between
@@ -132,18 +144,22 @@
         font-size: 12px
         line-height: 16px
     &__description
+        font-family: Nunito
         margin-left: 9px
     &__call-center
+        font-family: Nunito
         display: flex
         align-items: center
         justify-content: space-between
         margin-bottom: 17px
     &__heading
+        font-family: Nunito
         font-style: normal
         font-weight: 600
         font-size: 18px
         line-height: 25px
     &__number
+        font-family: Nunito
         display: flex
         align-items: center
         justify-content: space-between
@@ -153,10 +169,11 @@
         font-size: 18px
         line-height: 25px
     &__num
+        font-family: Nunito
         margin-left: 8px
     &__button
         width: 100%
-        min-height: 45px
+        height: 45px
         font-weight: 600
         font-size: 14px
         line-height: 19px
@@ -172,4 +189,6 @@
     background-color: #000
     border-radius: 10px
     overflow: hidden
-
+.number
+    font-weight: 400
+    font-size: 9
