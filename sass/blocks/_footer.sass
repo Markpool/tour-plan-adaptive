@@ -79,6 +79,10 @@
         list-style: none
         text-decoration: none
         color: $color-footer-text
+        &-navigation
+            color: $color-footer-text
+    &__inform:hover
+        color: $primary-link
     &__text
         color: $color-footer-text
         margin-bottom: 22px
@@ -89,6 +93,8 @@
     &__link
         text-decoration: none
         color: $color-footer-text
+    &__link:hover
+        color: $primary-link
     &__input
         width: 100%
         &-group
@@ -131,9 +137,6 @@
             white-space: nowrap
             margin: 0 auto
         &-item
-            // display: inline-block
-            // margin: 0 auto
-            
             margin-right: 12px
             &:last-child
                 margin-right: 0
@@ -144,6 +147,8 @@
             font-weight: normal
             font-size: 12px
             line-height: 15px
+        &-link:hover
+            color: $primary-link
         &_img
             max-width: 136px
-            // height: 22px
+

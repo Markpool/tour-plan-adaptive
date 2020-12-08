@@ -242,6 +242,11 @@
             min-height: 450px
         &-slider
             height: 350px
+            &__button
+                &--prev
+                    display: none
+                &--next
+                    display: none     
     .booking
         width: 100%
     .map
@@ -470,6 +475,22 @@
             height: 40px
             left: 38px
             top: 150px
+    .hotel
+        &-slider
+            &__item
+                &:after
+                    width: 278px
+                    height: 179px
+                    border-radius: 8px       
+            &__image
+                width: 278px
+                height: 179px
+                border-radius: 8px
+                margin: 0
+    .swiper
+        &-container
+            &-horizontal
+                height: 179px
     .reviews
         &-slider
             &__button

@@ -50,6 +50,10 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #cc1033;
+}
+
 .invalid {
   color: #ec1f46;
 }
@@ -452,6 +456,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__link:hover {
+  color: #7d0b22;
+}
+
 .navbar-menu__item--mobile_visible {
   display: none;
 }
@@ -490,6 +498,11 @@ template {
   width: 65px;
   border: none;
   background-color: #ec1f46;
+  cursor: pointer;
+}
+
+.search__button:hover {
+  background-color: #cc1033;
 }
 
 .user {
@@ -866,6 +879,10 @@ template {
   cursor: pointer;
 }
 
+.booking__button:hover {
+  background-color: #cc1033;
+}
+
 .map {
   width: 347px;
   height: 213px;
@@ -971,6 +988,10 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+}
+
+.subscribe__button:hover {
+  background-color: #cc1033;
 }
 
 .activities {
@@ -1093,6 +1114,10 @@ template {
   background-color: #ec1f46;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: #cc1033;
 }
 
 .footer {
@@ -1251,6 +1276,14 @@ template {
   color: #bdbdbd;
 }
 
+.footer__inform-navigation {
+  color: #bdbdbd;
+}
+
+.footer__inform:hover {
+  color: #7d0b22;
+}
+
 .footer__text {
   color: #bdbdbd;
   margin-bottom: 22px;
@@ -1263,6 +1296,10 @@ template {
 .footer__link {
   text-decoration: none;
   color: #bdbdbd;
+}
+
+.footer__link:hover {
+  color: #7d0b22;
 }
 
 .footer__input {
@@ -1353,6 +1390,10 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer__bottom-link:hover {
+  color: #7d0b22;
 }
 
 .footer__bottom_img {
@@ -1958,6 +1999,12 @@ template {
   .hotel-slider {
     height: 350px;
   }
+  .hotel-slider__button--prev {
+    display: none;
+  }
+  .hotel-slider__button--next {
+    display: none;
+  }
   .booking {
     width: 100%;
   }
@@ -2274,6 +2321,20 @@ template {
     height: 40px;
     left: 38px;
     top: 150px;
+  }
+  .hotel-slider__item:after {
+    width: 278px;
+    height: 179px;
+    border-radius: 8px;
+  }
+  .hotel-slider__image {
+    width: 278px;
+    height: 179px;
+    border-radius: 8px;
+    margin: 0;
+  }
+  .swiper-container-horizontal {
+    height: 179px;
   }
   .reviews-slider__button--prev {
     left: 42%;
