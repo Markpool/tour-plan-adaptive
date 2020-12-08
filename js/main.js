@@ -63,9 +63,14 @@ $(document).ready(function() {
         },
         phone: {
           required: "Phone number required",
-          minlenght: "Your phone number must be in the format +0000 000 00 00",
+          minlenght: "Your phone number must be in the format +7-999 999 99 99",
         },
       },
     });
   });
+  // Маска для телефона
+  $(document).ready(function() {
+    $("#phone").mask("+7(999) 999-99-99");
+  });
+  AOS.init();
 });
