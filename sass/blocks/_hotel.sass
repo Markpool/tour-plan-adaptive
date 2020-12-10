@@ -1,5 +1,5 @@
 .hotel
-    padding-top: 23px
+    padding-top: 14px
     padding-bottom: 70px
     &-info
         display: flex
@@ -100,7 +100,7 @@
     color: $light
     border-radius: 8px
     width: 350px
-    height: 210px
+    min-height: 210px
     padding: 28px
     &__info
         font-family: Nunito
@@ -171,12 +171,15 @@
     &__num
         font-family: Nunito
         margin-left: 8px
+    &__num:hover
+        color: $primary-button
     &__button
+        align-self: flex-end
+        padding: 13px 30px
         width: 100%
-        height: 45px
+        min-height: 45px
         font-weight: 600
         font-size: 14px
-        line-height: 19px
         border-radius: 4px
         background-color: $primary
         border-color: $primary
@@ -184,15 +187,15 @@
         color: $light
         cursor: pointer
     &__button:hover
-        background-color: $primary-button
-        
-        
+        background-color: $primary-button       
 .map
-    width: 347px
+    width: 100%
     height: 213px
-    background-color: #000
-    border-radius: 10px
-    overflow: hidden
+    frameborder: 0
+    border-radius: 8px
+    border: none
+    background-image: url(../img/map.jpg)
+
 .number
     font-weight: 400
     font-size: 9

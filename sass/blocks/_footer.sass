@@ -36,7 +36,7 @@
             grid-column: span 2
     &__form
         display: flex
-        align-items: center
+        align-self: center
         justify-content: space-between
         flex-wrap: wrap
     &__ul
@@ -52,6 +52,7 @@
         line-height: 23px
         margin: 0 0 16px 0
         text-transform: uppercase
+        white-space: nowrap
         &--inline
             margin: 0 43px 0 0
         &--mb-3
@@ -93,6 +94,12 @@
     &__link
         text-decoration: none
         color: $color-footer-text
+        &-img
+            width: 20
+            height: 20
+        &-img:hover
+            background-color: $primary
+            border-radius: 10px
     &__link:hover
         color: $primary-link
     &__input

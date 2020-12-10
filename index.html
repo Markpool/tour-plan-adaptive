@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Plan - Hotel Booking</title>
+    <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
-    />
+      />
+    <link rel="icon" href="../best-tour-plan/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -17,7 +18,7 @@
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo" data-aos="fade-down" data-aos-delay="100">
+          <a href="index.html" class="logo" data-aos="fade-down" data-aos-delay="100">
             <img src="img/horizontal-logo.svg" alt="Logo" class="logo__image" />
           </a>
 
@@ -44,7 +45,7 @@
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile_visible">
               <a href="#" class="user navbar__user navbar__user--mobile_visible">
-                <img src="img/user_avatar.jpg" alt="Avatar:Nathan" class="user__avatar--pink" />
+                <img src="img/user_avatar.jpg" alt="Avatar:Nathan" class="user__avatar-photo" />
                 <span class="user__name user__name--light">Nathan</span>
               </a>
             </li>
@@ -167,26 +168,15 @@
               </div>
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
-                <a class="booking__number" href="tel: 12100">
-                  <img src="img/call-center.svg" alt="Icon: call" />
+                <a class="booking__number" href="tel:12100">
+                  <img class="number-call" src="img/call-center.svg" alt="Icon: call" />
                   <span class="booking__num">12100</span>
                 </a>
               </div>
               <button data-toggle="modal" class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4177606190738!2d-0.15235848454746562!3d51.505551279634766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876052f99d7b523%3A0x477b77a33607c0cd!2z0JvQvtC90LTQvtC9INCl0LjQu9GC0L7QvSDQn9Cw0YDQuiDQm9C10LnQvQ!5e0!3m2!1sru!2sru!4v1606226226504!5m2!1sru!2sru"
-                width="100%"
-                height="213"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
+            <div class="map" id=hotel-map></div>
           </div>
         </div>
       </div>
@@ -197,9 +187,9 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-          <input type="email" class="subscribe__input" placeholder="Your email address" required />
-          <button class="subscribe__button">Send</button>
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+          <input type="email" class="subscribe__input form" placeholder="Your email address" name="email" required  />
+          <button class="subscribe__button form">Send</button>
         </form>
       </div>
     </section>
@@ -215,11 +205,11 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img class="stars" src="./img/star.svg" alt="Star" />
-                    <img class="stars" src="./img/star.svg" alt="Star" />
-                    <img class="stars" src="./img/star.svg" alt="Star" />
-                    <img class="stars" src="./img/star.svg" alt="Star" />
-                    <img class="stars" src="./img/star.svg" alt="Star" />
+                    <img class="star" src="./img/star.svg" alt="Star" />
+                    <img class="star" src="./img/star.svg" alt="Star" />
+                    <img class="star" src="./img/star.svg" alt="Star" />
+                    <img class="star" src="./img/star.svg" alt="Star" />
+                    <img class="star" src="./img/star.svg" alt="Star" />
                   </div>
                 </div>
                 <!-- /.reviews-slider__profile -->
@@ -241,10 +231,10 @@
                   <h3 class="reviews-slider__username">Kate Rodges</h3>
                   <span class="reviews-slider__date">Stayed 19 Aug, 2020</span>
                   <div class="reviews-slider__rating">
-                    <img class="stars" src="./img/star.svg" alt="Star" />
-                    <img class="stars" src="./img/star.svg" alt="Star" />
-                    <img class="stars" src="./img/star.svg" alt="Star" />
-                    <img class="stars" src="./img/star.svg" alt="Star" />
+                    <img class="star" src="./img/star.svg" alt="Star" />
+                    <img class="star" src="./img/star.svg" alt="Star" />
+                    <img class="star" src="./img/star.svg" alt="Star" />
+                    <img class="star" src="./img/star.svg" alt="Star" />
                   </div>
                 </div>
                 <!-- /.reviews-slider__profile -->
@@ -276,8 +266,8 @@
                     of chamarel"
               class="card__image"
             />
-            <h3 class="card__title--mb--1">The curious corner of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <h3 class="card__title-corner">The curious corner of chamarel</h3>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
             <img
@@ -286,7 +276,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
             <img
@@ -294,13 +284,13 @@
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
-            <h3 class="card__title--mb--3">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <h3 class="card__title-trip">Tamarind falls hiking trip - full day</h3>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
             <img src="img/activities-4.jpg" alt="The blue marine discoveryquest" class="card__image" />
-            <h3 class="card__title--mb--4">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <h3 class="card__title-discovery">The blue marine discovery quest</h3>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
         </div>
       </div>
@@ -365,13 +355,13 @@
             <h3 class="footer__title footer__title-inline">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link">
-                <img src="img/facebooke.svg" alt="Icon: facebook" />
+                <img class="footer__link-img" src="img/facebooke.svg" alt="Icon: facebook" /> 
               </a>
               <a href="#" class="footer__link">
-                <img src="img/youtube.svg" alt="Icon:youtube" />
+                <img class="footer__link-img" src="img/youtube.svg" alt="Icon:youtube" />
               </a>
               <a href="#" class="footer__link">
-                <img src="img/inst.svg" alt="Icon:instagram" />
+                <img class="footer__link-img" src="img/inst.svg" alt="Icon:instagram" />
               </a>
             </div>
           </div>
@@ -409,7 +399,7 @@
                   </div>
                   <div class="footer__information-contacts">
                     Tel (business hours) :
-                    <a class="footer__inform" href="tel:259 150">269 1500</a>
+                    <a class="footer__inform" href="tel:259⠀150">269⠀1500</a>
                     <br />
                     Tel (hotline) Monday - Saturday:
                     <a class="footer__inform" href="tel:52-56-61-38">52-56-61-38</a>
@@ -433,10 +423,10 @@
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
-                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required/>
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
               </div>
               <div class="footer__input-group">
-                <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required id="phone" />
+                <input type="tel" class="input footer__input phoneinput" placeholder="Phone Number*" name="phone" required  />
               </div>
               <textarea class="message footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
               <div class="footer__perm">
@@ -450,14 +440,13 @@
         <div class="footer__bottom">
           <ul class="footer__bottom-list">
             <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Disclaimer</a></li>
-            <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Conditions of use⠀⠀</a></li>
+            <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Conditions of use⠀</a></li>
             <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Cancellation policy</a></li>
           </ul>
           <img class="footer__bottom_img" src="img/pay.svg" alt="Payment" />
         </div>
         <!-- /.footer__bottom -->
-      </div>
-      
+      </div> 
     </footer>
     <div class="modal" id="rating__modal">
       <div class="modal__overlay"></div>
@@ -469,8 +458,8 @@
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
           <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2" />
-          <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="11" id="phone" />
-          <input type="emai" class="input modal__input" placeholder="Email*" name="email" required />
+          <input type="tel" class="input modal__input phoneinput" placeholder="Phone Number*" name="phone" required />
+          <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
           <textarea class="message modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
           <div class="modal__perm">
             <button class="button modal__button" type="submit">Send</button>
