@@ -51,6 +51,7 @@
         line-height: 18px
         border-radius: 4px
     &__button
+        width: 65px
         position: absolute
         min-width: 65px
         right: 0
@@ -65,5 +66,8 @@
         line-height: 15px
         border-radius: 0 4px 4px 0
         cursor: pointer
+        white-space: nowrap
+        overflow-x: hidden !important
+        text-overflow: ellipsis
     &__button:hover
         background-color: $primary-button

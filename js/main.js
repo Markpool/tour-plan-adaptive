@@ -52,7 +52,6 @@ const hotelMap = document.querySelector("#hotel-map")
   // Рекомендую всегда использовать let и conts. Хоть нам на курсе и говорят, что можно var. Используй let и const
   const menButton = document.querySelector(".menu-button")
   menButton.addEventListener("click", function () {
-    console.log("Клик по кнопке меню")
     document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible")
   });
 
